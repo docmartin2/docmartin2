@@ -8,6 +8,8 @@ RUN apk --update add openjdk7 \
     && mkdir /apache-tomcat-8.0.38/webapps/test \
     && echo "formation docker" > /apache-tomcat-8.0.38/webapps/test/index.html
 
+VOLUME "/apache-tomcat-8.0.38/webapps/test"
+
 EXPOSE 8080
 
 CMD ["run"]
