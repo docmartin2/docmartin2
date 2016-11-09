@@ -6,7 +6,7 @@ RUN apk --update add openjdk7 \
     && tar zxf /apache-tomcat-8.0.38.tar.gz \
     && rm -f /apache-tomcat-8.0.38.tar.gz \
     && mkdir /apache-tomcat-8.0.38/webapps/test \
-    && echo "test" > /apache-tomcat-8.0.38/webapps/test/index.html
+    && echo "test formation docker" > /apache-tomcat-8.0.38/webapps/test/index.html
 
 EXPOSE 8080
 
